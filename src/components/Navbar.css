@@ -1,19 +1,25 @@
 
 .navbar{
-    background-color:transparent;
+    background-color:skyblue;
     height:50px;
     display:flex;
     justify-content: start;
     align-items: center;
+}
+.nav-bar{
+    top:0;
 }
 .menu-bars {
    margin-left:1rem;
    font-size: 5rem;
    background: none;
 }
+h1{
+    text-align: center;
+}
 .nav-menu{
-    background-color: transparent;
-    height:500px;
+    background-color: skyblue;
+    height:530px;
     width: 250px;
    justify-content: center;
    align-items: center;
@@ -47,8 +53,9 @@
     border-radius: 3px;
 }
 .nav-text a:hover{
-    background-color:wheat;
-    color:black;
+    background-color:black;
+    color:white;
+    width:170px;
 }
 .nav-items{
     width:100%;

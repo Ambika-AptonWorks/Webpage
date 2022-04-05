@@ -1,0 +1,12 @@
+.container{
+    padding:5px;
+    width:400px;
+    height:500px;
+}
+button{
+ margin:10px 150px;
+}
+.error{
+    color:red;
+    font-size: 18px;
+}

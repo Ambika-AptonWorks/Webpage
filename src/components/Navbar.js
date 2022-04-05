@@ -8,18 +8,18 @@ import {IconContext} from'react-icons';
 
 function Navbar() {
   const[sidebar,setSideBar]=useState(false)
-
   const showbar=()=>setSideBar(!sidebar)
   return (
-    <>
+    <div>
     <IconContext.Provider value={{color:'white'}}>
-    <div className="navbar">
+    <div className="navbar"> 
       <div className='nav-bar'>
         <Link to="/" className='Link-page'>
           < FaIcons.FaBars onClick={showbar}/>
         </Link>
       </div>
     </div>
+    
         <div className={sidebar? 'nav-menu active':'nav-menu'} >
           <ul className='nav-items' onClick={showbar}>
             <li className='nav-toggle'>
@@ -36,10 +36,9 @@ function Navbar() {
               )
             })}
           </ul>
-
         </div>
         </IconContext.Provider>
-    </>
+    </div>
   )
 }
 
