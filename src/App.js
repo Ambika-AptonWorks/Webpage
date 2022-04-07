@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import CreateAccount from './components/pages/CreateAccount';
+import Products from './components/pages/Products';
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <>
     <Navbar></Navbar>
         <Routes>
-          <Route  path="/Home" element ={<Home />} />
+          <Route  path="/" element ={<Home />} />
           <Route  path="/Services" element ={<Services />} />
           <Route  path="/CreateAccount" element={<CreateAccount />} />
+          <Route path="/Products" element={<Products />} />
         </Routes>
    
     </>

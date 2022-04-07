@@ -12,12 +12,11 @@ export default function Home() {
   
   return (
       <>
-      <Link to="/Home"  />
-         <div className='Container'>
+      <Link to="/"  />
           <h1 >Home</h1>
+          <p>if you want to continue signin here!</p>
           <div>
           <button id="signup" className="btn btn-warning" onClick={()=>setAuth(true)}>Signin</button> 
-          </div>
           </div>
     </>
   )

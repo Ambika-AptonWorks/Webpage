@@ -45,31 +45,31 @@ export default function CreateAccount() {
      return errors;  
 };
     if(back){
-     return <Navigate to="/Home"></Navigate>
+     return <Navigate to="/"></Navigate>
     }
 
   return (
       <>
         <Link to="/CreateAccount"   />
-        <form onSubmit={handleSubmit} className="container">
+        <form onSubmit={handleSubmit} className="container form-control">
         <h1>CreateAccount</h1>
             <div className='ui divider'></div>
             <div className='ui form'>
-            <div className='field'>
+            <div className='field '>
                 <label>Username</label>
                 <input type="text" name='username' placeholder='username'
                  value={value.username}  
                  onChange={e =>setValue({...value,username:e.target.value})}></input>
             </div>
             <p>{formerror.username}</p>
-            <div className='field'>
+            <div className='field '>
                 <label>Email</label>
                 <input type="email" name='Email' placeholder='Email' 
                 value={value.Email}  
                 onChange={e =>setValue({...value,Email:e.target.value})}></input>
             </div>
             <p>{formerror.Email}</p>
-            <div className='field'>
+            <div className='field '>
                 <label>Password</label>
                 <input type="password" name='password' placeholder='password'
                   value={value.password}
