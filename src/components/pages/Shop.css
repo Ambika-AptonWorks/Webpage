@@ -1,0 +1,14 @@
+body{
+    overflow-x: hidden;
+   
+}
+.card-img-top{
+    width:250px;
+    height:250px;
+   margin-left: 15px;
+   
+}
+#p2{
+    
+    font-weight: bold;
+}

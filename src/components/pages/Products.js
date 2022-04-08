@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import Searchbar from './Searchbar'
+import Shop from './Shop'
 function Products() {
   return (
     <>
@@ -37,6 +38,7 @@ function Products() {
     </div>
   </div>
 </nav>
+<Shop />
  
     </>
   )
