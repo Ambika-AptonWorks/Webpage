@@ -1,0 +1,38 @@
+.menu-image img{
+    height:100%;
+}
+.memu-title{
+    border: 1px solid back;
+}
+.icon1{
+    color:rgb(219, 0, 36);
+    display:flex; 
+    animation-delay: 3s;
+}
+.icon2{
+    color:rgb(72, 222, 72);
+    display:flex;
+    
+}
+.icon3{
+    color:blue;
+    display:flex;
+    animation-delay:2s;
+}
+.icon1,.icon2,.icon3{
+    display:inline-block;
+    font-size:30px;
+    animation:float 5s ease-in-out
+    infinite;
+}
+@keyframes float{
+    0%{
+        transform:translatey(0)
+    }
+    50%{
+        transform:translatey(-15px)
+    }
+    100%{
+        transform:translatey(0)
+    }
+}

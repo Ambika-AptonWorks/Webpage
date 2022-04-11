@@ -15,7 +15,7 @@ export default function Home() {
       <Link to="/"  />
           <h1 >Home</h1>
           <p>if you want to continue signin here!</p>
-          <div>
+          <div className='button d-flex justify-content-center'>
           <button id="signup" className="btn btn-warning" onClick={()=>setAuth(true)}>Signin</button> 
           </div>
     </>

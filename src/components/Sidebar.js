@@ -18,8 +18,8 @@ export const sidebarData=[
         className:'nav-text'
     },
     {
-        title:'Services',
-        path:'/Services',
+        title:'Menucard',
+        path:'/Menucard',
         icon:<RiIcons.RiServiceLine />,
         className:'nav-text'
     },

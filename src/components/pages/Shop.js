@@ -12,6 +12,7 @@ function Shop() {
         setData(result) 
     }
     
+   
     return (
         <>
             <h1 className='text-center text-info'>Let's Shop</h1>
