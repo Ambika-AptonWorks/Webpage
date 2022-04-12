@@ -4,6 +4,11 @@
 .memu-title{
     border: 1px solid back;
 }
+.footer{
+    
+    background-color: skyblue;
+    color:white;
+}
 .icon1{
     color:rgb(219, 0, 36);
     display:flex; 

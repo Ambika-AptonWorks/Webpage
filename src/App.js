@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Menucard from './components/pages/Menucard'
 import CreateAccount from './components/pages/CreateAccount';
 import Products from './components/pages/Products';
+import Message from './components/Message';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route  path="/Menucard" element ={<Menucard />} />
           <Route  path="/CreateAccount" element={<CreateAccount />} />
           <Route path="/Products" element={<Products />} />
+          <Route path="/Message" element={<Message />} />
         </Routes>
    
     </>

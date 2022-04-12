@@ -4,15 +4,20 @@ import './Menucard.css'
 import Menu from './Menu'
 import * as BsIcon from 'react-icons/bs'
 import * as FaIcon from 'react-icons/fa'
+import {memo} from 'react'
 
-export default function Menucard() {
+function Menucard() {
   const[items,setItems]=useState(Menu)
+  const[order,setOrder]=useState(false)
 
   const Filterfood=(storing)=>{
     const fooditems=Menu.filter((currentfood)=>{
       return currentfood.category===storing
     });
     setItems(fooditems)
+  }
+  if(order){
+      alert(`do you like to order?${setItems}`)
   }
   return (
     <>
@@ -33,7 +38,7 @@ export default function Menucard() {
           <button className='btn btn-warning mx-1' onClick={()=>Filterfood('lunch')}>Lunch</button>
           <button className='btn btn-warning mx-1' onClick={()=>Filterfood('evening')}>Snacks</button>
           <button className='btn btn-warning mx-1' onClick={()=>Filterfood('dinner')}>Dinner</button>
-          <button className='btn btn-warning mx-1'  onClick={()=>setItems(Menu)}>All</button>
+          <button className='btn btn-warning mx-1' onClick={()=>setItems(Menu)}>All</button>
         </div>
       </div>
       <div className='row container-fluid'>
@@ -53,7 +58,7 @@ export default function Menucard() {
                     <div className='d-flex justify-content-between'>
                     <p class="card-text">Price:{price}</p>
                     <a href="#">
-                      <button className='btn btn-primary'>Order</button>
+                      <button className='btn btn-primary' onClick={()=>setOrder(true)}>Order</button>
                     </a>
                     </div>
                   </div>
@@ -72,3 +77,4 @@ export default function Menucard() {
     </>
   )
 }
+export default memo(Menucard)
